@@ -2,7 +2,6 @@
 
 exports[`The CdkDemo stack matches the snapshot 1`] = `
 Object {
-  "Description": "Demo app",
   "Parameters": Object {
     "Stage": Object {
       "AllowedValues": Array [
@@ -18,7 +17,17 @@ Object {
     "MyFirstBucket": Object {
       "DeletionPolicy": "Retain",
       "Properties": Object {
+        "PublicAccessBlockConfiguration": Object {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true,
+        },
         "Tags": Array [
+          Object {
+            "Key": "App",
+            "Value": "cdk-demo",
+          },
           Object {
             "Key": "gu:cdk:version",
             "Value": "TEST",
