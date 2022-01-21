@@ -41,5 +41,18 @@ _Tip: for higher-risk or more complex applications, you may want to 'dual-stack'
 for a while to gain confidence in the new infrastructure before deleting the
 old._
 
-Use `GuBucket` to recreate the bucket in `lib/cdk-demo.ts`. You can then deploy
-to AWS (if you like) and delete the `cfn.yaml` file.
+Use
+[GuS3Bucket](https://guardian.github.io/cdk/classes/constructs_s3.GuS3Bucket.html)
+to recreate the bucket in `lib/cdk-demo.ts`.
+
+_Tip: set `GuStack.migratedFromCloudFormation` to `true` and also the
+`existingLogicalId` prop on `GuS3Bucket` to 'adopt' the bucket into CDK without
+requiring a replacement._
+
+_Tip: run a `diff` again. What changes do you notice, e.g. around bucket
+security policies?_
+
+_Tip: another way to see changes is to run the tests. Use `yarn test -u` to
+update the snapshot when it changes._
+
+Finally, you can deploy to AWS (if you like) and delete the `cfn.yaml` file.
