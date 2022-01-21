@@ -1,0 +1,14 @@
+Description: Demo app
+
+Parameters:
+  Stage:
+    Type: String
+
+Resources:
+  MyFirstBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      VersioningConfiguration:
+        Status: Enabled
+    UpdateReplacePolicy: Retain
+    DeletionPolicy: Retain
