@@ -1,4 +1,9 @@
 Description: Demo app
+
+Parameters:
+  Stage:
+    Type: String
+
 Resources:
   MyFirstBucket:
     Type: AWS::S3::Bucket
