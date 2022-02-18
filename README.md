@@ -1,5 +1,8 @@
 # @guardian/cdk demo!
 
+**&#128249; [Screencast of this demo
+here!](https://drive.google.com/file/d/1Hic5Rl8mMhulTJE23rTEx6-efcn_mGbs/view?usp=sharing)**
+
 Let's get started.
 
 _Tip: each stage below is stored as a corresponding git tag, so you can check
